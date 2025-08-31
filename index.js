@@ -11,7 +11,7 @@ app.use(
   cors({
     origin: [
       "http://localhost:5173",
-      "https://dapper-axolotl-0beed0.netlify.app",
+      //"https://dapper-axolotl-0beed0.netlify.app",
     ],
     credentials: true, // agar cookies / auth tokens bhejna ho
   })
