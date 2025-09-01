@@ -6,12 +6,20 @@ const ImageSchema = new mongoose.Schema({
         type: String,
         required: true
     },
+    url: {
+        type: String,
+        required: true,
 
+    },
     prompt: {
         type: String,
         required: true,
         maxLength: 1000,
         minLength: 3
+    },
+    publicId: {
+        type: String,
+        required: true
     },
 
 }, {
