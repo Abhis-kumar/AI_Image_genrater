@@ -13,6 +13,7 @@ app.use(
     origin: [
       "http://localhost:5173",
 
+      //"https://dapper-axolotl-0beed0.netlify.app",
     ],
     credentials: true, // agar cookies / auth tokens bhejna ho
   })
@@ -90,7 +91,9 @@ app.put("/api/update-data", (req, res) => {
   });
 });
 
-// real routes
+
+// real routes 
+
 app.use("/api/image", ImageRouter);
 app.use("/api/user", userRouter);
 
