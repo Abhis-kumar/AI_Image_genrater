@@ -13,7 +13,7 @@ app.use(
     origin: [
       "http://localhost:5173",
 
-      "https://frabjous-wisp-adeb2f.netlify.app/"
+      "https://frabjous-wisp-adeb2f.netlify.app"
     ],
     credentials: true, // agar cookies / auth tokens bhejna ho
   })
