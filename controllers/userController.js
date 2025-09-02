@@ -1,4 +1,4 @@
-import { User } from "../models/User.js";
+import { User } from "../models/user.js";
 
 export const createUser = async (req, res) => {
     const { name, email, password, address } = req.body;
@@ -46,9 +46,9 @@ export const getUsers = async (req, res) => {
         })
     }
 
-    if (!users || users === "" || users === null){
+    if (!users || users === "" || users === null) {
         return res.status(404).json({
-            message:"users not found"
+            message: "users not found"
         });
     }
 
