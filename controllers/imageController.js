@@ -1,5 +1,5 @@
 import cloudinary from "../config/cloudinary.js";
-import { Image } from "../models/Image.js";
+import { Image } from "../models/image.js";
 import { generateImage } from "../utils/genrateimage.js";
 
 export const createImage = async (req, res) => {
